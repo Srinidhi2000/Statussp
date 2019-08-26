@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/eventItem"
+    android:layout_marginBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:hint="name"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id"
+        android:textSize="15dp"
+        android:layout_marginTop="16dp"
+        android:hint="id"
+        android:layout_below="@id/name"/>
+
+    <TextView
+        android:id="@+id/dept1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="84dp"
+        android:hint="Text2"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/dept2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_alignStart="@+id/venue"
+        android:layout_marginTop="83dp"
+        android:hint="Text2"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:hint="Text2"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/venue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@+id/starttime"
+        android:hint="Text2"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/starttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="7dp"
+        android:hint="Text2"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/part_teams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="51dp"
+        android:layout_toEndOf="@+id/id"
+        android:hint="part_teams"
+        android:textSize="15dp" />
+</RelativeLayout>
+</android.support.v7.widget.CardView>
