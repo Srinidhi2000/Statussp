@@ -9,11 +9,11 @@ public class event_item {
     private String start_time,venue,winner,hint;
     private String[] participating_teams;
 
-    public event_item( String id, String name/*,
-                       String dept1, String dept2, String dept1_score, String dept2_score,String type, String score, String start_time, String venue, String winner, String hint, String[] participating_teams*/) {
+    public event_item( String id, String name,
+                       String dept1, String dept2, String dept1_score, String dept2_score,String type, String score, String start_time, String venue, String winner, String hint, String[] participating_teams) {
         this.id = id;
         this.name = name;
-        /*this.dept1 = dept1;
+        this.dept1 = dept1;
         this.dept2 = dept2;
         this.dept1_score = dept1_score;
         this.dept2_score = dept2_score;
@@ -23,7 +23,7 @@ public class event_item {
         this.venue = venue;
         this.winner = winner;
         this.hint = hint;
-        this.participating_teams = participating_teams;*/
+        this.participating_teams = participating_teams;
     }
 
     public String getDept1() {

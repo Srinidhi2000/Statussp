@@ -32,14 +32,13 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity implements Live.OnFragmentInteractionListener,Upcoming.OnFragmentInteractionListener,Completed.OnFragmentInteractionListener,View.OnClickListener {
 
-EditText status_type;
+
 TabLayout tl;
 ViewPager viewPager;
 pageradapter adapter;
     ArrayList<String> dept_name=new ArrayList<>();
     ArrayList<String> sport_name=new ArrayList<>();
     String type;
-    boolean ischange=false;
 ImageView shift;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,7 +67,6 @@ ImageView shift;
         final int pixelsToMove = 30;
          final Handler mHandler = new Handler(Looper.getMainLooper());
         final Runnable SCROLLING_RUNNABLE = new Runnable() {
-
             @Override
             public void run() {
                 rv.smoothScrollBy(pixelsToMove, 0);
@@ -92,9 +90,9 @@ ImageView shift;
                         public void run() {
                             rv.setAdapter(null);
                             rv.setAdapter(deptlistAdapter);
-                            mHandler.postDelayed(SCROLLING_RUNNABLE, 2000);
+                            mHandler.postDelayed(SCROLLING_RUNNABLE, 500);
                         }
-                    }, 2000);
+                    }, 500);
                 }
             }
         });

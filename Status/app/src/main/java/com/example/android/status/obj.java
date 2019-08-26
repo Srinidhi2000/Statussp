@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 public class obj implements Serializable {
 private String dept1,dept2,dept1_score,dept2_score,id,name;
-@SerializedName("elimination_type")
+@SerializedName("round")
 private String type;
 @SerializedName("score_timestamp")
 private String score;
